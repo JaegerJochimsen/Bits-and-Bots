@@ -4,6 +4,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
+NAME = None
+PASS = None
+
+with open("recwebInfo.txt", 'r') as f:
+	NAME = f.readline().strip()
+	PASS = f.readline().strip()
 
 # link path to driver
 driver = webdriver.Chrome(PATH)
@@ -20,12 +26,12 @@ time.sleep(0.5)
 # fill out username field
 userName = driver.find_element_by_id('txtUsername')
 userName.click()
-userName.send_keys("jaegerj")
+userName.send_keys(NAME)
 
 # fill out password field
 passWord = driver.find_element_by_id("txtPassword")
 passWord.click()
-passWord.send_keys("EmMyDak9910")
+passWord.send_keys(PASS)
 
 logInButton = driver.find_element_by_id("btnLogin")
 logInButton.click()
