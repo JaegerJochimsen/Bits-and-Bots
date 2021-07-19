@@ -3,8 +3,8 @@ A brief excursion into the world of web scraping and bot development.
 
 *Beautiful Soup*: beautifulSoup.py
 This script is an exploration of web scraping using the bs4 module which contains BeautifulSoup. The script itself scrapes data from a url specified by the newURL variable and (in this particular example) grabs various information about graphics cards listed on the website and saves that in a new .csv file. 
-  *NOTE*: it would seem that many websites, especially sites that have bot inhibiting features, prevents webscraping and attempts to parse it using BeautifulSoup will fail. This 
-  can be circumvented using Selenium though it is not as easy to perform scraping-related actions.
+
+*NOTE*: it would seem that many websites, especially sites that have bot inhibiting features, prevents webscraping and attempts to parse it using BeautifulSoup will fail. This can be circumvented using Selenium though it is not as easy to perform scraping-related actions.
   
 *Selenium*: seleniumTest.py, warhammerBot.py
 Selenium is an automated test software useful for interacting remotely with webpages and is useful for limited web scraping applications. 
